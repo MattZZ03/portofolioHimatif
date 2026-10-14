@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portofolio</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <style>
+        html, body {
+            scroll-behavior: smooth;
+            scroll-padding-top: 115px;
+            background: linear-gradient(135deg,  #000000,  #030350,  #000080, #030350, #000000);
+        }
+
+        .reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .matt{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar {
+            background: linear-gradient(135deg, #1c1c1c, #000000,  #1c1c1c);
+        }
+
+        .navbar .nav-link {
+            color: #FFFFFF;
+        }
+
+        .navbar .nav-link:hover,
+        .navbar .nav-link.active {
+            color: #b7b6b6;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: #d7d7d7;
+            line-height: 1.2;
+        }
+
+        .link{
+          text-decoration: none;
+          color: white;
+        }
+
+        .link:hover {
+          color: #9e9e9e;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top" data-bs-theme="dark" style="width: 100%;">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About Me</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#portofolio">Portofolio</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#footer">Footer</a>
+        </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Head -->
+     <div class="head reveal">
+        <h1>Welcome to my Portofolio Website</h1>
+
+        <img src="img/matt2.jpeg" class="matt" alt="Profile Picture">
+        <h1>Hi, I'm Devan Matthew Adhiputra Tambunan</h1>
+        
+        <h2>I'm an Information Technology student from Universitas Sumatera Utara, who interesteed in technology, especially coding and informatics stuffs. Currently, I'm focusing on web development.</h2>
+    </div>
+    <!-- End Head -->
+
+    <!-- Start About -->
+    <div class="about reveal" id="about">
+        <h1 style="padding-top: 300px;">About Me</h1>
+        <h2 style="padding-bottom: 300px;">I'm a student of Information Technology at Universitas Sumatera Utara.<br>I have a strong interest in technology, particularly in coding and informatics.<br>My current focus is on web development, where I enjoy creating and designing websites.</h2>
+    </div>
+    <!-- End About -->
+
+    <!-- Start Portofolio -->
+<div class="portofolio reveal" id="portofolio">
+<h1>My Portofolio</h1>
+<div class="card mb-3 reveal">
+  <img src="portofolio/firstporto.png" class="card-img-top" alt="My First Portofolio Website">
+  <div class="card-body">
+    <h5 class="card-title">My First Portofolio Website</h5>
+    <p class="card-text" style="text-align: center;"><small class="text-body-secondary">My first ever website that I ever created by using native HTML, CSS, and JavaScript.</small></p>
+  </div>
+</div>
+
+<div class="card mb-3 reveal">
+  <img src="portofolio/loginpageproject.jpeg" class="card-img-top" alt="Login Page Website">
+  <div class="card-body">
+    <h5 class="card-title">Login Page Website</h5>
+    <p class="card-text" style="text-align: center;"><small class="text-body-secondary">My first project by using PHP language to learn how Back-End works.</small></p>
+  </div>
+</div>
+
+<div class="card mb-3 reveal">
+  <img src="portofolio/webmkwk.png" class="card-img-top" alt="MKWK Website Project">
+  <div class="card-body">
+    <h5 class="card-title">MKWK Website Project</h5>
+    <p class="card-text" style="text-align: center;"><small class="text-body-secondary">My MKWK project that I make using HTML, Bootstrap CSS, and JavaScript.</small></p>
+  </div>
+</div>
+</div>
+<!-- End Portofolio -->
+
+    <!-- Start Footer -->
+    <footer class="bg-dark text-white text-center py-3" id="footer">
+      <h4>Get In Touch!</h4>
+      <a class="link" href="https:wa.me/6281264833185">WhatsApp</a>
+      <a class="link" href="https://www.instagram.com/matt.berotaksenku/">Instagram</a>
+      <a class="link" href="www.linkedin.com/in/devanmatthew">LinkedIn</a>
+      <a class="link" href="https://github.com/MattZZ03">Github</a>
+      <a class="link" href="https://web.facebook.com/profile.php?id=61578026851547">Facebook</a>
+      <a class="link" href="https://x.com/DevanMatthew_">Twitter</a>
+      <a class="link" href="https://www.tiktok.com/@matt.berotaksenku">Tiktok</a>
+      <a class="link" href="https://www.threads.com/@matt.berotaksenku">Threads</a>
+      <p>&copy; 2026 Devan Matthew Adhiputra Tambunan. All rights reserved.</p>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="fadeio.js"></script>
+    <script src="/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
