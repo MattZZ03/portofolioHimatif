@@ -49,11 +49,18 @@
             color: #b7b6b6;
         }
 
-        h1, h2, h3, h4, h5 {
+        h1, h2, h3, h4, h5{
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
             color: #d7d7d7;
             line-height: 1.2;
+        }
+
+        p{
+          font-size: x-large;
+          font-family: Arial, Helvetica, sans-serif;
+          text-align: center;
+          color: #d7d7d7;
         }
 
         .link{
@@ -73,6 +80,42 @@
         .greetings{
           margin-top: 20px;
           font-weight: 1000;
+        }
+
+        .skills {
+          padding-bottom: 100px;
+        }
+
+        .skill-box {
+          height: 100%;
+          padding: 30px;
+          background: rgba(255, 255, 255, 0.04);
+          border: 1px solid rgba(255, 255, 255, 0.12);
+          border-radius: 12px;
+        }
+
+        .skill-box ul {
+          list-style: none;
+          padding: 0;
+          margin: 20px 0 0;
+        }
+
+        .skill-box li {
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: x-large;
+          text-align: center;
+          color: #d7d7d7;
+          padding: 10px 0;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .skill-box li:last-child {
+          border-bottom: none;
+        }
+
+        .table{
+          color: rgb(100, 121, 187);
+          font-weight: bold;
         }
 
     </style>
@@ -97,6 +140,10 @@
         </li>
 
         <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+
+        <li class="nav-item">
           <a class="nav-link" href="#portofolio">Portofolio</a>
         </li>
 
@@ -116,7 +163,7 @@
         <img src="img/matt2.jpeg" class="matt" alt="Profile Picture">
         <h1>Hi, I'm <b>Devan Matthew Adhiputra Tambunan</b></h1>
         <br>
-        <h2>I'm an Information Technology student from Universitas Sumatera Utara, who interesteed in technology, especially coding and informatics stuffs. Currently, I'm focusing on web development.</h2>
+        <p>I'm an Information Technology student from Universitas Sumatera Utara, who interesteed in technology, especially coding and informatics stuffs. Currently, I'm focusing on web development.</p>
     </div>
     <!-- End Head -->
 
@@ -124,9 +171,44 @@
     <div class="about reveal" id="about">
         <h1 style="padding-top: 250px;">About Me</h1>
         <br>
-        <h2 style="padding-bottom: 150px;">I'm a student of Information Technology at Universitas Sumatera Utara.<br>I have a strong interest in technology, particularly in coding and informatics.<br>My current focus is on web development, where I enjoy creating and designing websites.</h2>
+        <p style="padding-bottom: 150px;">I'm a student of <b>Information Technology</b> at <b>Universitas Sumatera Utara</b>.<br>I have a strong interest in technology, particularly in coding and informatics.<br>My current focus is on <b>Web Development</b>, where I enjoy creating and designing websites.</p>
     </div>
     <!-- End About -->
+
+    <!-- Start Skills -->
+    <div class="skills reveal" id="skills">
+        <h1>My Skills</h1>
+        <div class="container mt-5">
+    <div class="row g-4">
+
+      <div class="col-md-6">
+        <div class="skill-box">
+          <h2 class="table">Hard Skills</h2>
+          <ul>
+            <li>HTML &amp; CSS</li>
+            <li>JavaScript</li>
+            <li>Bootstrap</li>
+            <li>PHP</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="skill-box">
+          <h2 class="table">Soft Skills</h2>
+          <ul>
+            <li>Teamwork</li>
+            <li>Problem Solving</li>
+            <li>Communication</li>
+            <li>Time Management</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+    </div>
+    <!-- End Skills -->
 
     <!-- Start Portofolio -->
 <div class="portofolio reveal" id="portofolio">
